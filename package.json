@@ -25,9 +25,7 @@
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
     },
-    "dependencies": {
-        
-    },
+    "dependencies": {},
     "devDependencies": {
         "browser-sync": "2.24.7",
         "gulp": "^3.9.1",
@@ -37,5 +35,9 @@
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.1",
         "gulp-uglify": "3.0.1"
+    },
+    "scripts": {
+        "start": "node app",
+        "postinstall": "gulp default"
     }
 }
