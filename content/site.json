@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "siteUrl": "https://et-nat.com",
+    "title": "Tamir Natanov — Software Engineer III",
+    "description": "Frontend-focused software engineer building resilient product systems, reusable architecture, and safer paths to production.",
+    "themeColor": "#07100f"
+  },
+  "identity": {
+    "name": "Tamir Natanov",
+    "initials": "TN",
+    "role": "Software Engineer III",
+    "location": "Phoenix, Arizona",
+    "email": "et.natanov@gmail.com"
+  },
+  "navigation": [
+    { "label": "Work", "href": "#work" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Toolbox", "href": "#toolbox" },
+    { "label": "About", "href": "#about" }
+  ],
+  "hero": {
+    "title": {
+      "before": "Clear paths through",
+      "accent": "complex",
+      "after": "systems."
+    },
+    "intro": {
+      "before": "I'm Tamir, a frontend-focused software engineer at",
+      "emphasis": "American Express",
+      "after": "I work across architecture, migration strategy, and developer enablement—building product systems that are safer to change and easier to reuse."
+    },
+    "actions": [
+      { "label": "Explore selected work", "href": "#work", "icon": "arrow-down-right", "variant": "primary" },
+      { "label": "Start a conversation", "href": "mailto:et.natanov@gmail.com", "icon": "mail", "variant": "secondary" }
+    ],
+    "facts": [
+      { "value": "2019 → now", "label": "Shipping web and mobile products" },
+      { "value": "50K+ users", "label": "Largest public platform rebuild" },
+      { "value": "Build · Scale · Enable", "label": "How I frame engineering impact" }
+    ]
+  },
+  "about": {
+    "section": {
+      "index": "05",
+      "label": "About",
+      "title": "Curiosity is part of the job."
+    },
+    "lead": {
+      "before": "I like the point where a messy problem becomes a",
+      "accent": "clear model",
+      "after": "—then a useful product."
+    },
+    "body": "I'm a Phoenix-based software engineer with a creative design sense and a practical bias toward shipping. Away from the keyboard, I spend time outdoors, garden through the Arizona seasons, bike when the weather cooperates, cook, and keep up with science fiction, strategy games, and the latest shifts in frontend technology.",
+    "interests": [
+      { "label": "Gardening", "icon": "sprout" },
+      { "label": "Biking", "icon": "bike" },
+      { "label": "Cooking", "icon": "chef-hat" },
+      { "label": "Sci-fi + strategy", "icon": "book-open" }
+    ]
+  },
+  "contact": {
+    "kicker": "Have a system worth untangling?",
+    "title": "Let's make the path clear.",
+    "footerNote": "Built with intention."
+  }
+}

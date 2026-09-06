@@ -1,0 +1,30 @@
+{
+  "section": {
+    "index": "03",
+    "label": "Experience",
+    "title": "From product execution to system direction.",
+    "intro": "My scope has grown from owning complete customer experiences to shaping the technical paths that help teams deliver them safely."
+  },
+  "roles": [
+    {
+      "start": "JAN 2022",
+      "end": "PRESENT",
+      "role": "Software Engineer III",
+      "company": "American Express",
+      "copy": "Frontend architecture, product delivery, API modernization, reusable modules, and developer enablement in a large cross-functional environment."
+    },
+    {
+      "start": "FEB 2019",
+      "end": "JAN 2022",
+      "role": "Front-end Developer",
+      "company": "GymnasticBodies by GymFit.tv",
+      "copy": "Rebuilt a 50,000+ user fitness streaming and scheduling platform in React, delivered web experiences from concept through deployment, and built a companion React Native app with in-app purchases."
+    }
+  ],
+  "currentNotes": {
+    "label": "Current field notes",
+    "title": "Making engineering context usable.",
+    "copy": "I'm exploring better ways to connect product intent, code evidence, and agent-assisted workflows—especially across complex frontend ecosystems.",
+    "topics": ["Living product docs", "Local LLMs", "Agent workflows", "Developer tools", "System recovery"]
+  }
+}

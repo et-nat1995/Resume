@@ -1,0 +1,103 @@
+.wrap {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding-top: 0.75rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0 0.75rem 0 1.15rem;
+  border: 1px solid rgb(114 241 197 / 14%);
+  border-radius: 1rem;
+  background: rgb(7 16 15 / 78%);
+  box-shadow: 0 12px 40px rgb(0 0 0 / 18%);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brandMark {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid var(--line-bright);
+  border-radius: 0.55rem;
+  background: var(--mint);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.65rem, 2vw, 1.75rem);
+}
+
+.links a {
+  position: relative;
+  padding: 0.55rem 0.15rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: color 180ms ease;
+}
+
+.links a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0.3rem;
+  left: 0;
+  height: 1px;
+  background: var(--mint);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 180ms ease;
+}
+
+.links a:hover,
+.links a:focus-visible { color: var(--text); }
+
+.links a:hover::after,
+.links a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.55rem;
+  padding: 0 0.95rem;
+  border-radius: 0.7rem;
+  background: var(--text);
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 750;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.contact:hover { background: var(--mint); transform: translateY(-1px); }
+.contact svg { width: 1rem; height: 1rem; }
+
+@media (max-width: 720px) {
+  .wrap { padding-top: 0.4rem; }
+  .nav { grid-template-columns: 1fr auto; min-height: 3.65rem; padding-left: 0.75rem; }
+  .links, .brandName { display: none; }
+  .contact { min-height: 2.35rem; padding-inline: 0.8rem; }
+}

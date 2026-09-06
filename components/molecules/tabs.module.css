@@ -1,0 +1,33 @@
+.root,
+.list,
+.content {
+  min-width: 0;
+}
+
+.list {
+  margin: 0;
+}
+
+.trigger {
+  position: relative;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.trigger:focus-visible {
+  z-index: 1;
+  outline: 2px solid var(--mint);
+  outline-offset: -2px;
+}
+
+.trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.content {
+  outline: none;
+}

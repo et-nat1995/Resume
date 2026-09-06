@@ -1,0 +1,14 @@
+{
+  "section": {
+    "index": "04",
+    "label": "Toolbox",
+    "title": "Tools follow the system.",
+    "intro": "I'm strongest in the modern React ecosystem, with enough platform depth to carry an idea through architecture, delivery, and production."
+  },
+  "groups": [
+    { "title": "Core", "items": ["TypeScript", "JavaScript", "React", "Next.js", "HTML + CSS"] },
+    { "title": "Architecture", "items": ["Micro frontends", "API integration", "State management", "Design systems", "Responsive UI"] },
+    { "title": "Delivery", "items": ["Nx + pnpm", "Storybook", "Rollup + esbuild", "GitHub Actions", "Testing + E2E"] },
+    { "title": "Platform", "items": ["Node.js", "Docker", "Kubernetes", "React Native", "Cross-browser QA"] }
+  ]
+}

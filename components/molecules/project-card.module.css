@@ -1,0 +1,117 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: linear-gradient(150deg, rgb(18 35 31 / 93%), rgb(10 21 19 / 96%));
+}
+
+.card::after {
+  position: absolute;
+  top: -6rem;
+  right: -6rem;
+  width: 14rem;
+  height: 14rem;
+  border: 1px solid rgb(114 241 197 / 18%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2.2rem rgb(114 241 197 / 2.5%), 0 0 0 4.4rem rgb(114 241 197 / 2%);
+  content: "";
+}
+
+.meta,
+.title,
+.summary,
+.breakdown,
+.stack {
+  position: relative;
+  z-index: 1;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.title {
+  max-width: 12ch;
+  margin: 1.8rem 0 0;
+  font-size: clamp(2.2rem, 5vw, 4.3rem);
+  font-weight: 570;
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+}
+
+.summary {
+  max-width: 41rem;
+  margin: 1.3rem 0 0;
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2.6rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--line);
+}
+
+.breakdownCell {
+  min-height: 11rem;
+  padding: 1.2rem;
+  background: var(--surface);
+}
+
+.breakdownLabel {
+  margin: 0;
+  color: var(--mint);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.breakdownCopy {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.62;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.stack span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.stack span::before {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: var(--apricot);
+  content: "";
+}
+
+@media (max-width: 720px) {
+  .card { padding: 1.3rem; }
+  .title { font-size: 2.65rem; }
+  .breakdown { grid-template-columns: 1fr; }
+  .breakdownCell { min-height: auto; }
+}

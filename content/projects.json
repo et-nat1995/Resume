@@ -1,0 +1,53 @@
+{
+  "section": {
+    "index": "01",
+    "label": "Selected work",
+    "title": "Systems that create leverage.",
+    "intro": "The common thread is bigger than UI: define the boundary, make change safe, and leave behind a path other engineers can follow."
+  },
+  "defaultProjectId": "migration",
+  "items": [
+    {
+      "id": "migration",
+      "number": "01",
+      "shortTitle": "Safer API evolution",
+      "type": "Enterprise systems",
+      "title": "Move the system without moving the risk.",
+      "summary": "Designed a controlled path for moving frontend API traffic between versions while preserving day-to-day customer behavior. Feature flags made the cutover granular, reversible, and observable.",
+      "details": [
+        { "label": "The tension", "copy": "Multiple teams needed to modernize shared integrations without turning a version change into a coordinated release event." },
+        { "label": "The approach", "copy": "Separated compatibility logic, introduced per-path controls, and backed the migration with focused testing and production-safe rollout steps." },
+        { "label": "The leverage", "copy": "Converted the successful implementation into shared utilities and a repeatable method that other engineers and teams could adopt." }
+      ],
+      "stack": ["React", "TypeScript", "Feature flags", "Shared utilities", "E2E testing"]
+    },
+    {
+      "id": "module",
+      "number": "02",
+      "shortTitle": "Composable product module",
+      "type": "Frontend architecture",
+      "title": "One experience. Many product contexts.",
+      "summary": "Built a reusable micro-frontend module whose behavior is driven through deliberate prop contracts. Consuming teams keep ownership of their data while the experience remains consistent.",
+      "details": [
+        { "label": "The tension", "copy": "A useful product experience needed to appear in different applications, each with its own endpoint, data ownership, and release rhythm." },
+        { "label": "The approach", "copy": "Kept the module presentation-focused, defined a stable interface, and moved environment-specific data concerns to consuming teams." },
+        { "label": "The leverage", "copy": "Reduced duplicated UI logic and created a cleaner boundary between shared product behavior and team-owned integrations." }
+      ],
+      "stack": ["Micro frontends", "React", "TypeScript", "Contract design", "Component systems"]
+    },
+    {
+      "id": "streaming",
+      "number": "03",
+      "shortTitle": "50K+ user platform rebuild",
+      "type": "Web + mobile product",
+      "title": "Rebuild the product, not just the interface.",
+      "summary": "Reworked a WordPress-based fitness streaming and scheduling service into a modern React experience, then designed and built its companion mobile application for iOS and Android.",
+      "details": [
+        { "label": "The tension", "copy": "A growing 50,000+ user service needed a more capable product foundation across streaming, scheduling, and mobile." },
+        { "label": "The approach", "copy": "Rebuilt the web experience in React, assessed product and UX feasibility, and carried the system into React Native with in-app purchases." },
+        { "label": "The leverage", "copy": "Created a consistent cross-platform experience and a foundation the team could continue evolving through new feature work." }
+      ],
+      "stack": ["React", "React Native", "Redux Thunk", "Expo", "iOS + Android"]
+    }
+  ]
+}

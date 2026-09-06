@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "degree": "Full Stack Web Development Certificate",
+      "school": "University of Arizona",
+      "period": "2018",
+      "href": "https://bootcamp.ce.arizona.edu/"
+    },
+    {
+      "degree": "A.A.S., Computer Science",
+      "school": "Paradise Valley Community College",
+      "period": "2018",
+      "href": "https://www.paradisevalley.edu/"
+    },
+    {
+      "degree": "Computer Science studies · 40 credit hours",
+      "school": "Holon Institute of Technology",
+      "period": "2016–2018",
+      "href": "https://www.hit.ac.il/"
+    }
+  ]
+}

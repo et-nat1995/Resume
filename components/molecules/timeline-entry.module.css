@@ -1,0 +1,42 @@
+.item {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 1.4rem;
+  padding-block: 1.8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.role {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 690;
+  letter-spacing: -0.03em;
+}
+
+.company {
+  margin: 0.2rem 0 0;
+  color: var(--mint);
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.copy {
+  margin: 0.85rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 720px) {
+  .item { grid-template-columns: 1fr; gap: 0.6rem; }
+  .date { flex-direction: row; gap: 0.4rem; }
+}

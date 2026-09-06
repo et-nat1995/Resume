@@ -1,13 +1,15 @@
 import type { Metadata, Viewport } from "next";
+import { portfolioContent } from "@/lib/content";
 import "./globals.css";
 
+const { meta, identity } = portfolioContent.site;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://et-nat.com"),
-  title: "Tamir Natanov — Software Engineer III",
-  description:
-    "Frontend-focused software engineer building resilient product systems, reusable architecture, and safer paths to production.",
-  applicationName: "Tamir Natanov",
-  authors: [{ name: "Tamir Natanov" }],
+  metadataBase: new URL(meta.siteUrl),
+  title: meta.title,
+  description: meta.description,
+  applicationName: identity.name,
+  authors: [{ name: identity.name }],
   alternates: {
     canonical: "/",
   },
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: "dark",
-  themeColor: "#07100f",
+  themeColor: meta.themeColor,
 };
 
 export default function RootLayout({

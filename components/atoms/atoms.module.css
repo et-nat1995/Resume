@@ -1,0 +1,23 @@
+.container {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.85rem;
+  padding: 0 0.65rem;
+  border: 1px solid var(--line-bright);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: min(calc(100% - 1.25rem), var(--max-width));
+  }
+}

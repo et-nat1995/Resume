@@ -1,0 +1,73 @@
+{
+  "explorer": {
+    "title": "Engineering map",
+    "code": "TN / 03",
+    "ariaLabel": "Explore Tamir's engineering approach",
+    "defaultLensId": "build",
+    "lenses": [
+      {
+        "id": "build",
+        "label": "Build",
+        "kicker": "From concept to product",
+        "title": "Composable by design",
+        "copy": "I shape frontend systems around clear contracts, so products can evolve without every team moving in lockstep.",
+        "nodes": [
+          { "code": "01", "name": "Contract", "detail": "Stable inputs" },
+          { "code": "02", "name": "Module", "detail": "Owned behavior" },
+          { "code": "03", "name": "Consumer", "detail": "Flexible data" }
+        ]
+      },
+      {
+        "id": "scale",
+        "label": "Scale",
+        "kicker": "Change without disruption",
+        "title": "Migrations with a safety net",
+        "copy": "I turn risky, all-at-once change into observable steps—protecting business-as-usual behavior while the system moves forward.",
+        "nodes": [
+          { "code": "V1", "name": "Baseline", "detail": "Known behavior" },
+          { "code": "FF", "name": "Control", "detail": "Granular rollout" },
+          { "code": "V2", "name": "Evolve", "detail": "Measured cutover" }
+        ]
+      },
+      {
+        "id": "enable",
+        "label": "Enable",
+        "kicker": "Make the path repeatable",
+        "title": "A solution others can use",
+        "copy": "The work is not finished when my code ships. I package the pattern into shared utilities, guidance, and examples that help other teams move faster.",
+        "nodes": [
+          { "code": "01", "name": "Prove", "detail": "Working path" },
+          { "code": "02", "name": "Package", "detail": "Shared tools" },
+          { "code": "03", "name": "Adopt", "detail": "Team leverage" }
+        ]
+      }
+    ]
+  },
+  "principlesSection": {
+    "section": {
+      "index": "02",
+      "label": "How I engineer",
+      "title": "The habits behind the output."
+    },
+    "items": [
+      {
+        "number": "01",
+        "icon": "shield-check",
+        "title": "Make change reversible",
+        "copy": "Feature flags, compatibility layers, and observable steps turn a high-risk release into a series of controlled decisions."
+      },
+      {
+        "number": "02",
+        "icon": "layers",
+        "title": "Design the boundary first",
+        "copy": "Clear ownership and deliberate contracts let shared modules stay reusable without hiding product-specific complexity."
+      },
+      {
+        "number": "03",
+        "icon": "git-branch",
+        "title": "Build the paved road",
+        "copy": "A good solution becomes better when it is packaged, explained, and easy for another engineer to adopt confidently."
+      }
+    ]
+  }
+}

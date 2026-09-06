@@ -1,0 +1,34 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.62fr) minmax(18rem, 0.38fr);
+  gap: clamp(3rem, 9vw, 8rem);
+  align-items: start;
+}
+
+.lead { margin: 0; font-size: clamp(1.7rem, 3.3vw, 3rem); font-weight: 540; letter-spacing: -0.045em; line-height: 1.22; }
+.lead span { color: var(--mint); }
+.copy { max-width: 43rem; margin: 1.5rem 0 0; color: var(--text-muted); line-height: 1.8; }
+.interests { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin-top: 2rem; }
+
+.interest {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 3.5rem;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  color: var(--text-soft);
+  font-size: 0.84rem;
+}
+
+.interest svg { width: 1rem; height: 1rem; color: var(--apricot); }
+.education { border-top: 1px solid var(--line); }
+
+@media (max-width: 980px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .interests { grid-template-columns: 1fr; }
+}

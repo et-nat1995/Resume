@@ -1,0 +1,33 @@
+.item {
+  display: block;
+  padding-block: 1.15rem;
+  border-bottom: 1px solid var(--line);
+  transition: padding-left 180ms ease, background 180ms ease;
+}
+
+.item:hover {
+  padding-left: 0.65rem;
+  background: rgb(114 241 197 / 2.5%);
+}
+
+.degree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.92rem;
+  font-weight: 660;
+}
+
+.degree svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--mint);
+}
+
+.school {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}

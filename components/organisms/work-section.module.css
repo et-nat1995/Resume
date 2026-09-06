@@ -1,0 +1,64 @@
+.tabs {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.32fr) minmax(0, 0.68fr);
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: start;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.trigger {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: stretch;
+  min-height: 5.4rem;
+  padding: 0.85rem 0.2rem;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--text-muted);
+  text-align: left;
+  white-space: normal;
+}
+
+.trigger[data-state="active"] { background: transparent; color: var(--text); }
+.trigger[data-state="active"]::after { opacity: 0; }
+.triggerIndex { align-self: start; padding-top: 0.2rem; color: var(--mint); font-family: var(--font-mono); font-size: 0.75rem; }
+.triggerCopy { display: flex; flex-direction: column; gap: 0.2rem; }
+.triggerTitle { color: inherit; font-size: 0.98rem; font-weight: 690; letter-spacing: -0.02em; }
+.triggerType { color: var(--text-muted); font-size: 0.75rem; font-weight: 500; }
+
+.trigger > svg {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  transform: translateX(-0.4rem);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.trigger[data-state="active"] > svg { color: var(--mint); opacity: 1; transform: translateX(0); }
+.panel { min-height: 35rem; }
+
+@media (max-width: 980px) {
+  .tabs { grid-template-columns: 1fr; }
+  .list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid var(--line); }
+  .trigger { grid-template-columns: 1fr; align-content: start; min-height: 8rem; padding: 1rem; border-right: 1px solid var(--line); }
+  .trigger > svg { display: none; }
+}
+
+@media (max-width: 720px) {
+  .list { display: flex; flex-direction: row; overflow-x: auto; border-right: 1px solid var(--line); scrollbar-width: none; }
+  .list::-webkit-scrollbar { display: none; }
+  .trigger { flex: 0 0 13.5rem; min-height: 7.2rem; border-bottom: 0; }
+}
